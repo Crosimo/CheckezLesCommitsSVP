@@ -29,3 +29,8 @@ Route::get('/okay', function () {
     $var2 = "Esteban";
     return view('newview', compact('var1', "var2"));
 })->name("Variability");
+
+Route::get('/couleur/{color}', function ($color) {
+
+    return view('couleurs', compact('color'));
+})->name("couleur");
