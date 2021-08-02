@@ -19,7 +19,13 @@ Route::get('/Jean', function () {
 })->name("Jean");
 
 
-Route::get('/{id}', function ($id) {
+Route::get('/sad/{id}', function ($id) {
 
     return view('welcome', compact('id'));
 })->name("Variable");
+
+Route::get('/okay', function () {
+    $var1 = 2;
+    $var2 = "Esteban";
+    return view('newview', compact('var1', "var2"));
+})->name("Variability");
