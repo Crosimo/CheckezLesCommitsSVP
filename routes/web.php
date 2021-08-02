@@ -16,4 +16,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/Jean', function () {
     $drago = "<h2>Deb</h2>";
     return $drago;
-});
+})->name("Jean");
