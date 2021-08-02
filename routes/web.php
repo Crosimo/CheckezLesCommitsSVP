@@ -17,3 +17,9 @@ Route::get('/Jean', function () {
     $drago = "<h2>Deb</h2>";
     return $drago;
 })->name("Jean");
+
+
+Route::get('/{id}', function ($id) {
+
+    return view('welcome', compact('id'));
+})->name("Variable");
